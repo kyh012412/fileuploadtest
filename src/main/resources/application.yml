@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    hikari:
+      jdbc-url: jdbc:oracle:thin:@localhost:1521:XE
+      username: hr
+      password: hr
+      driver-class-name: oracle.jdbc.OracleDriver
+
+server:
+  port: 10000
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.fileupload.demo
